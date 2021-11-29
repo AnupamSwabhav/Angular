@@ -1,0 +1,24 @@
+<div>
+    <h1>Student List</h1>
+    <table class="table table-striped">
+            <tr>
+                <th>ID</th>
+                <th>F_NAME</th>
+                <th>L_NAME</th>
+                <th>AGE</th>
+                <th>IS_MALE</th>
+                <th>ADDRESS</th>
+                <th>DELETE</th>
+            </tr>
+        <tr *ngFor="let stud of data">
+            <td>{{stud.attribute}}</td>
+        </tr>
+    </table>
+</div>
+<ul>
+    <li *ngFor="let item of data">
+        {{item.body}}
+    </li>
+</ul>
+
+        
